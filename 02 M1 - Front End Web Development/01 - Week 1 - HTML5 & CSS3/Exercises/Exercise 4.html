@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Creating a form</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+     <style>
+
+        body{
+            font-family: "Inter", sans-serif;
+         }
+
+     
+     form{
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    input, select{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1> The Basic Form</h1>
+    <!-- Form Starts -->
+     <!-- Creating a portal for students to store their information -->
+      <form action="https://formspree.io/f/xpwzpzrd" method="post">
+        <!-- First name -->
+         <label>Enter your first name: </label>
+         <input type="text" name="first_name" placeholder="First name">
+        
+         <!-- Last name -->
+          <label>Enter your last name: </label>
+          <input type="text" name="last_name" placeholder="Last name">
+
+          <!-- Gender -->
+           <label>Gender: </label>
+           <select name="gender" id="">
+            <option value="   ">    </option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+           </select>
+           
+           <!-- Date of birth -->
+            <label>Your date of birth: </label>
+            <input type="date" name="date_of_birth" id="">
+
+            <!-- Email address -->
+             <label> Email address: </label>
+             <input type="text" name="email" placeholder="someone@example.com">
+
+             <!-- Submit button -->
+              <button type="submit">Send</button>
+
+      </form>
+
+      <form action=" http://httpbin.org/get" method="get">
+
+        <!-- Create a search bar in order to find the students information -->
+
+        <input type="search" name="search_name" id="">
+
+        <!-- Search button -->
+         <button type="submit">Search</button>
+
+        
+      </form>
+    
+</body>
+</html>
